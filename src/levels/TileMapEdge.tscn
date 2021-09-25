@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://assets/tileset_modern_old.tres" type="TileSet" id=1]
+
+[node name="TileMapEdge" type="TileMap"]
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 80, 80 )
+collision_layer = 4
+collision_mask = 0
+format = 1
+tile_data = PoolIntArray( -65536, 22, 0, -65506, 22, 0, 262144, 22, 0, 262174, 22, 0, 589824, 1, 0, 589854, 1, 0, 655360, 4, 0, 655390, 4, 0, 720896, 19, 0, 720926, 19, 0 )

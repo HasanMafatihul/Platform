@@ -1,0 +1,90 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://assets/background.png" type="Texture" id=1]
+[ext_resource path="res://assets/ui_theme.tres" type="Theme" id=2]
+[ext_resource path="res://src/screens/Scripts/button_global.gd" type="Script" id=3]
+
+[node name="UI" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="background" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 2.66968
+margin_right = 2.66968
+texture = ExtResource( 1 )
+expand = true
+stretch_mode = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="title" type="Label" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -225.0
+margin_top = 90.7691
+margin_right = 225.0
+margin_bottom = 137.769
+text = "OVERHEALED"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -182.0
+margin_top = -74.0
+margin_right = 182.0
+margin_bottom = 150.0
+theme = ExtResource( 2 )
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Tutorial" type="Button" parent="VBoxContainer"]
+margin_right = 364.0
+margin_bottom = 50.0
+size_flags_vertical = 3
+text = "Tutorial"
+script = ExtResource( 3 )
+path = "res://src/screens/tutorial_main.tscn"
+
+[node name="Play" type="Button" parent="VBoxContainer"]
+margin_top = 58.0
+margin_right = 364.0
+margin_bottom = 108.0
+rect_pivot_offset = Vector2( 796.261, -173 )
+size_flags_vertical = 3
+text = "Play"
+script = ExtResource( 3 )
+path = "res://src/screens/MainLevels.tscn"
+
+[node name="Credit" type="Button" parent="VBoxContainer"]
+margin_top = 116.0
+margin_right = 364.0
+margin_bottom = 166.0
+rect_pivot_offset = Vector2( 796.261, -173 )
+size_flags_vertical = 3
+text = "Credit"
+script = ExtResource( 3 )
+path = "res://src/screens/Credits.tscn"
+
+[node name="Quit" type="Button" parent="VBoxContainer"]
+margin_top = 174.0
+margin_right = 364.0
+margin_bottom = 224.0
+size_flags_vertical = 3
+text = "Quit"
+script = ExtResource( 3 )
+path = "quit"
